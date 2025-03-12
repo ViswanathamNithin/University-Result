@@ -1,0 +1,103 @@
+<!--  <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Results</title>
+</head>
+<body>
+	<form action="http://localhost:9090/UniversityResul/Result">
+		<table>
+			<tr>
+				<th colspan="2">
+				   UNIVERSITY RESULT
+				</th>
+			</tr>	
+			<tr>
+				<th>ENTER ROLL NUMBER</th>
+				<td><input type="text" name="rollno"/></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+				<input type="submit" value="GET RESULT"/>
+				</td>
+			</tr>
+		</table>
+	</form>
+
+</body>
+</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Results</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 350px;
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        label {
+            font-size: 16px;
+            font-weight: bold;
+            display: block;
+            margin: 10px 0 5px;
+            text-align: left;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>University Results</h2>
+        <form action="http://localhost:9090/UniversityResul/Result" method="GET">
+            <label for="rollno">Enter Roll Number</label>
+            <input type="text" id="rollno" name="rollno" placeholder="Enter your roll number" required>
+            <button type="submit">Get Result</button>
+        </form>
+    </div>
+
+</body>
+</html>
